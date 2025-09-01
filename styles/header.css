@@ -1,0 +1,236 @@
+/* ===========================
+   HEADER STYLES
+=========================== */
+#main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    z-index: 1000; 
+    background-color: transparent; /* transparent when at top */
+    transition: 0.15s;
+
+}
+
+/* Changes background when user scrolls */
+#main-header.scrolled{
+    background-color: white;
+}
+
+
+
+/* ===========================
+   NAVIGATION MENU
+=========================== */
+#nav-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    
+}
+
+
+#nav-menu ul li a{
+    text-decoration:none;
+    background-color: rgb(224, 222, 222);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    transition: 0.15s;
+}
+
+/* Hover effect on nav links */
+#nav-menu ul li a:hover{
+    background-color: rgb(9, 154, 221);
+    color: white;
+}
+
+
+/* When link is clicked */
+#nav-menu ul li a.active-section {
+  background-color: rgb(9, 154, 221);
+  color: white;
+}
+
+
+/* ===========================
+   SPECIAL ENROLMENT LINK
+=========================== */
+#nav-menu .enrolment-form-link{
+    color: white;
+    background-color: rgb(13, 206, 13);
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border-radius: 2rem;
+    border: 0.18rem solid white;
+    transition: 0.15s;
+    
+}
+
+#nav-menu .enrolment-form-link:hover{
+    background-color: rgb(48, 231, 48);
+    
+    
+}
+
+#main-header .logo{
+    width: 10rem;
+    
+}
+
+
+
+
+/* ===========================
+HAMBURGER-menu MENU (for Small screens)
+=========================== */
+#hamburgerMenu{
+    background-color:#f00085;
+    padding: 16px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none; /*hidden by default on large screens*/
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 28px;
+    transition: transform 0.2s ease; /* spin animation */
+
+}
+
+#hamburgerMenu span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.2s ease; /* smooth line animation */
+}
+
+
+#nav-menu{
+    display: flex; /* nav visible by default (desktop) */
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:1200px){
+
+    #main-header{
+        background-color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+ 
+   
+
+    
+    #nav-menu{
+        display: none;  /* hide nav by default */
+        flex-direction: column; /* stack vertically */
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%); /* truly center it */
+       
+        width: 90%;
+    }
+
+    #nav-menu ul{
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+    }
+
+    #nav-menu ul li a, #nav-menu .enrolment-form-link{
+       
+    display: block;            /* make links full width */
+    width: 100%;               /* full width of the menu */
+    background-color: #48a000;   /* green background */
+    text-align: center;        /* center the text */
+    padding: 1rem 0;           /* vertical padding */
+    border-radius: 0;          /* remove rounded corners */
+    color: white;  
+    transition: 0.15s; 
+            
+
+
+    }
+
+    #nav-menu ul li a:hover, #nav-menu .enrolment-form-link:hover{
+    background-color: rgb(255, 210, 11);
+    color: rgb(0, 0, 0);
+    
+    }
+
+    #nav-menu ul li a:active{
+    background-color: rgb(255, 210, 11);
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+    }
+
+    
+
+    #hamburgerMenu{
+        display: flex; /* show hamburger-menu on small screens */
+    }
+
+    #nav-menu.active{
+        display: flex;  /* Show nav when "active" */
+    }
+}
+
+
+/* ===========================
+ HAMBURGER-menu ANIMATION
+=========================== */
+/* First line rotates into diagonal */
+#hamburgerMenu.active span:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+
+}
+
+
+/* Middle line disappears */
+#hamburgerMenu.active span:nth-child(2){
+    opacity: 0;
+}
+
+
+/* Last line rotates into diagonal */
+#hamburgerMenu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* Entire hamburger-menu spins for effect */
+#hamburgerMenu.active {
+  transform: rotate(360deg); /* spin effect */
+}
+
+

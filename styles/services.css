@@ -1,0 +1,166 @@
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* matches about-section background */
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: black; /* green to match flip card front */
+    margin-bottom: 10px;
+}
+
+.services p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border-top: 6px solid #2196F3; /* adds a blue accent line */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #2196F3; /* blue headings to match flip card back */
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* Extra Mural Activities Section */
+.activities {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.activities h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.activities p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Tiles Layout */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tile {
+  padding: 40px 20px;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+
+
+/* What's Included Section */
+.included {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.included h2 {
+  font-size: 2rem;
+  color: #4CAF50; /* consistent with About section */
+  margin-bottom: 10px;
+}
+
+.included p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Grid */
+.included-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.included-item {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.included-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.included-item .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.included-item h3 {
+  font-size: 1.25rem;
+  color: #2196F3; /* consistent with flip card back */
+  margin-bottom: 10px;
+}
+
+.included-item p {
+  font-size: 0.95rem;
+  color: #444;
+}

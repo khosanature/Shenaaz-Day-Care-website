@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shenzaay Day Care</title>
+
+    <!--External css files for styling-->
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/body elements.css" />
+    <link rel="stylesheet" href="styles/about-section.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/fees.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <section id="home">
+      <!--home background image-->
+
+      <img
+        class="home-background-img"
+        src="images/home backgrond img.png"
+        alt="home-background-img"
+      />
+    </section>
+
+    <!--main header section of the website-->
+    <header id="main-header">
+      <!--logo section (clicking it scrolls to top/home section)-->
+      <div>
+        <a class="logo" href="#home"
+          ><img class="logo" src="images/logo.png" alt="Shenzaay Day Care Logo"
+        /></a>
+      </div>
+
+      <!--hamburger menu(visible on small screens for navigation toggle)-->
+      <div class="hamburger-menu" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!--navigation menu-->
+      <nav id="nav-menu">
+        <ul>
+          <!--navigation links to scroll to different sections of the page-->
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <!--special stylled link for the enrolment form-->
+            <a class="enrolment-form-link" href="#enrolment-form"
+              >Enrolment Form</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--facebook floating link-->
+    <div class="facebook-page-link-container">
+      <a
+        class="facebook-page-link"
+        href="https://web.facebook.com/Shenaazdaycare"
+        target="_blank"
+        ><img class="facebook-icon" src="images/icons/facebook icon.png" alt=""
+      /></a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <!-- Section Title -->
+      <h1>About Us</h1>
+
+      <!-- Body Text immediately under heading -->
+      <p class="about-body">
+        We believe that early childhood is a time of wonder and discovery, and
+        we use play, creativity, and hands-on learning as the foundation of our
+        daily curriculum.
+      </p>
+
+      <!-- Flip Cards Container (Mission & Vision) -->
+      <div class="flip-cards-container">
+        <!-- Mission Card -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Our Mission</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                To support the holistic growth of every child by fostering a
+                caring, inclusive, and educational environment where children
+                learn, explore, and thrive.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Our Vision</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                To be a trusted leader in early childhood development, creating
+                a joyful space where children develop essential life skills,
+                strong values, and a lifelong love of learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <h2>Our Programs & Services</h2>
+      <p>
+        Shenaaz Day Care offers age-appropriate care and learning programs
+        designed to nurture children at every stage of development.
+      </p>
+
+      <div class="service-cards">
+        <div class="card">
+          <img src="images/3months baby.jpg" alt="Baby care" />
+          <h3>Babies (3 Months+)</h3>
+          <p>
+            Gentle, loving care with lots of stimulation, cuddles, and a safe
+            environment to support your baby’s early growth.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/toddler.jpg" alt="Toddler care" />
+          <h3>Toddlers</h3>
+          <p>
+            Play-based learning with activities that build social skills,
+            creativity, and early independence.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/gradeR.jpg" alt="Grade R" />
+          <h3>Grade R</h3>
+          <p>
+            Structured early learning program focused on literacy, numeracy, and
+            school readiness in a fun environment.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/day care.jpg" alt="Day Care" />
+          <h3>Day Care</h3>
+          <p>
+            Full-day care including meals, nap time, and activities tailored to
+            your child’s age group.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/after care.png" alt="Aftercare" />
+          <h3>Aftercare</h3>
+          <p>
+            Safe, supervised environment after school with fun activities and
+            homework support for primary learners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra Mural Activities Section -->
+    <section class="activities" id="activities">
+      <h2>Extra-Mural Activities</h2>
+      <p>
+        We believe in giving children opportunities to explore their talents and
+        interests through fun and engaging extra-mural programs.
+      </p>
+
+      <div class="tiles">
+        <div class="tile" style="background-color: #4caf50">
+          <h3>Music & Dance</h3>
+        </div>
+        <div class="tile" style="background-color: #2196f3">
+          <h3>Art & Craft</h3>
+        </div>
+        <div class="tile" style="background-color: #ff9800">
+          <h3>Sports & Games</h3>
+        </div>
+        <div class="tile" style="background-color: #9c27b0">
+          <h3>Swimming</h3>
+        </div>
+        <div class="tile" style="background-color: #e91e63">
+          <h3>Storytelling</h3>
+        </div>
+        <div class="tile" style="background-color: #3f51b5">
+          <h3>Language Classes</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="included" id="included">
+      <h2>What’s Included in a Day</h2>
+      <p>
+        At Shenaaz Day Care, every day is balanced with learning, rest,
+        nutrition, and play to ensure your child’s full development.
+      </p>
+
+      <div class="included-grid">
+        <div class="included-item">
+          <div class="icon">📚</div>
+          <h3>Learning</h3>
+          <p>
+            Fun, structured activities that encourage literacy, numeracy, and
+            creativity.
+          </p>
+        </div>
+
+        <div class="included-item">
+          <div class="icon">🍎</div>
+          <h3>Meals</h3>
+          <p>
+            Nutritious meals and snacks provided daily, tailored for growing
+            children.
+          </p>
+        </div>
+
+        <div class="included-item">
+          <div class="icon">😴</div>
+          <h3>Nap Time</h3>
+          <p>
+            Quiet and cozy nap areas to let little ones recharge during the day.
+          </p>
+        </div>
+
+        <div class="included-item">
+          <div class="icon">⚽</div>
+          <h3>Play</h3>
+          <p>
+            Indoor and outdoor playtime to boost physical skills and social
+            interaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions & Fees Section -->
+    <section class="admissions" id="admissions">
+      <h2>Admissions & Fees</h2>
+      <p>
+        We welcome children from 3 months to Grade R. Our process is simple and
+        transparent, designed to make joining Shenaaz Day Care stress-free for
+        parents.
+      </p>
+
+      <!-- Admissions Steps -->
+      <div class="admissions-steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Inquiry</h3>
+          <p>
+            Contact us or book a visit to learn more about our facilities and
+            programs.
+          </p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Application</h3>
+          <p>Complete the enrollment form and submit the required documents.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Enrollment</h3>
+          <p>Confirm your child’s placement by paying the registration fee.</p>
+        </div>
+      </div>
+
+      <!-- Fee Structure -->
+      <div class="fees-table">
+        <h3>Fee Structure</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Age Group</th>
+              <th>Monthly Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Babies</td>
+              <td>3–18 months</td>
+              <td>R2,500</td>
+            </tr>
+            <tr>
+              <td>Toddlers</td>
+              <td>18 months – 3 years</td>
+              <td>R2,200</td>
+            </tr>
+            <tr>
+              <td>Grade R</td>
+              <td>4–6 years</td>
+              <td>R2,000</td>
+            </tr>
+            <tr>
+              <td>Aftercare</td>
+              <td>Primary School Learners</td>
+              <td>R1,200</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Gallery & Facilities Section -->
+    <section class="gallery-facilities" id="gallery">
+      <h2>Gallery & Facilities</h2>
+      <p>
+        Our facilities are designed to provide a safe, nurturing, and
+        stimulating environment for children to learn and grow.
+      </p>
+
+      <!-- Facilities Grid -->
+      <div class="facilities">
+        <div class="facility">
+          <img src="images/brightclassroom.jpg" alt="Classroom" />
+          <h3>Bright Classrooms</h3>
+          <p>Spacious and colorful classrooms designed for fun and learning.</p>
+        </div>
+        <div class="facility">
+          <img src="images/outdoorplayground.jpg" alt="Playground" />
+          <h3>Outdoor Playground</h3>
+          <p>Safe play area with swings, slides, and climbing frames.</p>
+        </div>
+        <div class="facility">
+          <img src="images/naprooms.jpg" alt="Nap Room" />
+          <h3>Nap Rooms</h3>
+          <p>Quiet and cozy spaces for peaceful rest and nap time.</p>
+        </div>
+        <div class="facility">
+          <img src="images/healthmeals.jpg" alt="Kitchen" />
+          <h3>Healthy Meals</h3>
+          <p>
+            Nutritious meals prepared daily in our clean, child-friendly
+            kitchen.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo Gallery -->
+      <div class="photo-gallery">
+        <img src="images/gallery1.jpg" alt="Gallery 1" />
+        <img src="images/gallery2.jpg" alt="Gallery 2" />
+        <img src="images/gallery3.jpg" alt="Gallery 3" />
+        <img src="images/gallery4.jpg" alt="Gallery 4" />
+        <img src="images/gallery5.jpg" alt="Gallery 5" />
+        <img src="images/gallery6.jpg" alt="Gallery 6" />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Get in touch with us today.</p>
+
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Our Details</h3>
+          <p>
+            <strong>Address:</strong> 41 Paul Rd, Kibler Park, Johannesburg,
+            2091
+          </p>
+          <p><strong>Phone:</strong> 011 943 4239</p>
+          <p><strong>Business Hours:</strong> Mon - Fri, 6:00 AM - 6:00 PM</p>
+
+          <!-- Google Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.8386408946853!2d28.031117374645984!3d-26.332123977050567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95a8cb9a71bb7d%3A0x23fa2dbaaf53e3d8!2s41%20Paul%20Rd%2C%20Kibler%20Park%2C%20Johannesburg%2C%202091!5e0!3m2!1sen!2sza!4v1690000000000!5m2!1sen!2sza"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="tel" name="phone" placeholder="Your Phone Number" />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--javascript files for behavior-->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
